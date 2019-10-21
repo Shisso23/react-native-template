@@ -3604,7 +3604,7 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-husky@^4.0.0-beta.5:
+husky@4.0.0-beta.5:
   version "4.0.0-beta.5"
   resolved "https://registry.yarnpkg.com/husky/-/husky-4.0.0-beta.5.tgz#b89febfc0812f2de6f0e29142f147aed946fac6a"
   integrity sha512-2pjLVRjXTkWoNpCFFltAiVD+qpaXDfVEldnzINgI5N7ncxY1cryFvUZnYoSQIG9NN7QDLZ6AtO/HtNObjBln6g==
