@@ -285,10 +285,10 @@ PODS:
     - ReactCommon/jscallinvoker (= 0.61.2)
   - RNCAsyncStorage (1.6.2):
     - React
-  - RNFBApp (6.0.0):
+  - RNFBApp (6.0.2):
     - Firebase/Core (~> 6.8.1)
     - React
-  - RNFBCrashlytics (6.0.0):
+  - RNFBCrashlytics (6.0.2):
     - Crashlytics (~> 3.12.0)
     - Fabric (~> 1.9.0)
     - Firebase/Core (~> 6.8.1)
@@ -454,8 +454,8 @@ SPEC CHECKSUMS:
   React-RCTVibration: fb54c732fd20405a76598e431aa2f8c2bf527de9
   ReactCommon: 5848032ed2f274fcb40f6b9ec24067787c42d479
   RNCAsyncStorage: 60a80e72d95bf02a01cace55d3697d9724f0d77f
-  RNFBApp: ab5fd1046cfba3f762fe6f71600c8eab5ec2a83b
-  RNFBCrashlytics: 9420a2bfa8d3ff9f150f3cb845bfbcd97587d12e
+  RNFBApp: 32c782583cda2a9d53eac0ca154daf9f4e94f0fd
+  RNFBCrashlytics: bd170b20f5220420a1e0c6fb2d89789d1cd7279b
   RNGestureHandler: 4cb47a93019c1a201df2644413a0a1569a51c8aa
   RNKeychain: c658833a9cb2cbcba6423bdd6e16cce59e27da0e
   Yoga: 14927e37bd25376d216b150ab2a561773d57911f
