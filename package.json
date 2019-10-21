@@ -1,0 +1,76 @@
+{
+  "name": "codehesion",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "prettier": "prettier --write \"{src,jest-setup,utilities}/**/*.js\" index.js",
+    "lint": "eslint --fix \"{src,jest-setup,utilities}/**/*.js\" index.js",
+    "lint-ci": "eslint \"{src,jest-setup,utilities}/**/*.js\" index.js",
+    "ensure-no-wild-cards": "node ./utilities/validate-dependencies/check-dependencies-for-wildcards.js",
+    "test": "jest",
+    "initEnv": "[ ! -f .env ] && { echo \"Created environment file.\"; cp .env.example .env; } || echo \"Environment file exists.\"",
+    "postinstall": "npm run initEnv"
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "1.6.2",
+    "@react-native-firebase/app": "6.0.0",
+    "@react-native-firebase/crashlytics": "6.0.0",
+    "autobind-decorator": "2.4.0",
+    "axios": "0.18.0",
+    "lodash": "4.17.12",
+    "moment": "2.24.0",
+    "prop-types": "15.7.2",
+    "react": "16.9.0",
+    "react-native": "0.61.2",
+    "react-native-elements": "1.2.5",
+    "react-native-gesture-handler": "1.4.1",
+    "react-native-keychain": "3.1.3",
+    "react-native-router-flux": "4.1.0-beta.5",
+    "react-native-vector-icons": "6.6.0",
+    "react-redux": "7.1.0",
+    "redux": "4.0.1",
+    "redux-promise": "0.6.0",
+    "redux-thunk": "2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.6.4",
+    "@babel/plugin-proposal-decorators": "7.6.0",
+    "@babel/runtime": "7.6.3",
+    "@react-native-community/eslint-config": "0.0.5",
+    "babel-jest": "24.9.0",
+    "eslint": "6.4.0",
+    "eslint-config-esnext": "4.0.0",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-config-react-native": "4.0.0",
+    "eslint-plugin-babel": "5.3.0",
+    "eslint-plugin-import": "2.18.0",
+    "eslint-plugin-jest": "22.7.1",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-react": "7.14.2",
+    "eslint-plugin-react-native": "3.7.0",
+    "husky": "3.0.0",
+    "jest": "24.9.0",
+    "lint-staged": "9.0.0",
+    "metro-react-native-babel-preset": "0.56.0",
+    "react-native-dotenv": "0.2.0",
+    "react-test-renderer": "16.9.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run ensure-no-wild-cards"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write \"{src,jest-setup,utilities}/**/*.js\" index.js",
+      "eslint --fix \"{src,jest-setup,utilities}/**/*.js\" index.js",
+      "git add"
+    ]
+  }
+}
