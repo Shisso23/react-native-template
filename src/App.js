@@ -7,10 +7,6 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet} from 'react-native';
-import {
-    Colors
-} from 'react-native/Libraries/NewAppScreen';
 import { ThemeProvider } from 'react-native-elements';
 import { Provider } from 'react-redux';
 import ReduxThunk from 'redux-thunk';

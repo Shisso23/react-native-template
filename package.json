@@ -69,8 +69,8 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier --write \"{src,jest-setup,utilities}/**/*.js\" index.js",
-      "eslint --fix \"{src,jest-setup,utilities}/**/*.js\" index.js",
+      "npm run prettier",
+      "npm run lint",
       "git add"
     ]
   }
