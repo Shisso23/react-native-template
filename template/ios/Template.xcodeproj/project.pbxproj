@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* CodehesionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CodehesionTests.m */; };
-		05F60D26594E8F2942696AAB /* libPods-Codehesion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4BD9765A0F54EAFA02966C /* libPods-Codehesion.a */; };
+		00E356F31AD99517003FC87E /* TemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TemplateTests.m */; };
+		05F60D26594E8F2942696AAB /* libPods-Template.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4BD9765A0F54EAFA02966C /* libPods-Template.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -16,10 +16,10 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* CodehesionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CodehesionTests.m */; };
-		48A6A11C2211CD0FE0F6249E /* libPods-CodehesionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01249F445987590B9472BDDB /* libPods-CodehesionTests.a */; };
-		6B5AD3123ACBDDF31B79A379 /* libPods-Codehesion-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ADCDF75F0A8637ECE6826BC /* libPods-Codehesion-tvOSTests.a */; };
-		C4F95E4CDB49671F2D7BAD06 /* libPods-Codehesion-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 848D189AC417A47E16EF81A4 /* libPods-Codehesion-tvOS.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* TemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TemplateTests.m */; };
+		48A6A11C2211CD0FE0F6249E /* libPods-TemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01249F445987590B9472BDDB /* libPods-TemplateTests.a */; };
+		6B5AD3123ACBDDF31B79A379 /* libPods-Template-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ADCDF75F0A8637ECE6826BC /* libPods-Template-tvOSTests.a */; };
+		C4F95E4CDB49671F2D7BAD06 /* libPods-Template-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 848D189AC417A47E16EF81A4 /* libPods-Template-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,43 +28,43 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = Codehesion;
+			remoteInfo = Template;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "Codehesion-tvOS";
+			remoteInfo = "Template-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* CodehesionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodehesionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* TemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* CodehesionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodehesionTests.m; sourceTree = "<group>"; };
-		01249F445987590B9472BDDB /* libPods-CodehesionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CodehesionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		01301CC79EAF14DDF0B61637 /* Pods-Codehesion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codehesion.release.xcconfig"; path = "Target Support Files/Pods-Codehesion/Pods-Codehesion.release.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Codehesion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codehesion.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Codehesion/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Codehesion/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* TemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemplateTests.m; sourceTree = "<group>"; };
+		01249F445987590B9472BDDB /* libPods-TemplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TemplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01301CC79EAF14DDF0B61637 /* Pods-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.release.xcconfig"; path = "Target Support Files/Pods-Template/Pods-Template.release.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Template/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Template/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Codehesion/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Codehesion/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Codehesion/main.m; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* Codehesion-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codehesion-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* Codehesion-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Codehesion-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A200FA58D5941568CFA3776 /* Pods-Codehesion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codehesion.debug.xcconfig"; path = "Target Support Files/Pods-Codehesion/Pods-Codehesion.debug.xcconfig"; sourceTree = "<group>"; };
-		620FBA46CC20AE70BE1FBBDF /* Pods-CodehesionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodehesionTests.release.xcconfig"; path = "Target Support Files/Pods-CodehesionTests/Pods-CodehesionTests.release.xcconfig"; sourceTree = "<group>"; };
-		6CA3F0F6B7D1D96FC48A07FB /* Pods-CodehesionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodehesionTests.debug.xcconfig"; path = "Target Support Files/Pods-CodehesionTests/Pods-CodehesionTests.debug.xcconfig"; sourceTree = "<group>"; };
-		848D189AC417A47E16EF81A4 /* libPods-Codehesion-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Codehesion-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8ADCDF75F0A8637ECE6826BC /* libPods-Codehesion-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Codehesion-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B5D542E05460FF93C3BE55C /* Pods-Codehesion-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codehesion-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Codehesion-tvOS/Pods-Codehesion-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		92188DF138D530917EF0A109 /* Pods-Codehesion-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codehesion-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Codehesion-tvOSTests/Pods-Codehesion-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		CD4BD9765A0F54EAFA02966C /* libPods-Codehesion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Codehesion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEE4EBBCCE4ED0A4E42F0FF6 /* Pods-Codehesion-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codehesion-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Codehesion-tvOSTests/Pods-Codehesion-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D5EA1F3826366B13BC433430 /* Pods-Codehesion-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codehesion-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Codehesion-tvOS/Pods-Codehesion-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Template/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Template/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Template/main.m; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* Template-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Template-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* Template-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Template-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A200FA58D5941568CFA3776 /* Pods-Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.debug.xcconfig"; path = "Target Support Files/Pods-Template/Pods-Template.debug.xcconfig"; sourceTree = "<group>"; };
+		620FBA46CC20AE70BE1FBBDF /* Pods-TemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateTests.release.xcconfig"; path = "Target Support Files/Pods-TemplateTests/Pods-TemplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		6CA3F0F6B7D1D96FC48A07FB /* Pods-TemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateTests.debug.xcconfig"; path = "Target Support Files/Pods-TemplateTests/Pods-TemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		848D189AC417A47E16EF81A4 /* libPods-Template-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Template-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ADCDF75F0A8637ECE6826BC /* libPods-Template-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Template-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B5D542E05460FF93C3BE55C /* Pods-Template-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Template-tvOS/Pods-Template-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		92188DF138D530917EF0A109 /* Pods-Template-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Template-tvOSTests/Pods-Template-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD4BD9765A0F54EAFA02966C /* libPods-Template.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Template.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE4EBBCCE4ED0A4E42F0FF6 /* Pods-Template-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Template-tvOSTests/Pods-Template-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5EA1F3826366B13BC433430 /* Pods-Template-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Template-tvOS/Pods-Template-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A6A11C2211CD0FE0F6249E /* libPods-CodehesionTests.a in Frameworks */,
+				48A6A11C2211CD0FE0F6249E /* libPods-TemplateTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05F60D26594E8F2942696AAB /* libPods-Codehesion.a in Frameworks */,
+				05F60D26594E8F2942696AAB /* libPods-Template.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4F95E4CDB49671F2D7BAD06 /* libPods-Codehesion-tvOS.a in Frameworks */,
+				C4F95E4CDB49671F2D7BAD06 /* libPods-Template-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,20 +98,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B5AD3123ACBDDF31B79A379 /* libPods-Codehesion-tvOSTests.a in Frameworks */,
+				6B5AD3123ACBDDF31B79A379 /* libPods-Template-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* CodehesionTests */ = {
+		00E356EF1AD99517003FC87E /* TemplateTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* CodehesionTests.m */,
+				00E356F21AD99517003FC87E /* TemplateTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = CodehesionTests;
+			path = TemplateTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -122,7 +122,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* Codehesion */ = {
+		13B07FAE1A68108700A75B9A /* Template */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,7 +133,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = Codehesion;
+			name = Template;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				CD4BD9765A0F54EAFA02966C /* libPods-Codehesion.a */,
-				848D189AC417A47E16EF81A4 /* libPods-Codehesion-tvOS.a */,
-				8ADCDF75F0A8637ECE6826BC /* libPods-Codehesion-tvOSTests.a */,
-				01249F445987590B9472BDDB /* libPods-CodehesionTests.a */,
+				CD4BD9765A0F54EAFA02966C /* libPods-Template.a */,
+				848D189AC417A47E16EF81A4 /* libPods-Template-tvOS.a */,
+				8ADCDF75F0A8637ECE6826BC /* libPods-Template-tvOSTests.a */,
+				01249F445987590B9472BDDB /* libPods-TemplateTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,9 +159,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* Codehesion */,
+				13B07FAE1A68108700A75B9A /* Template */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* CodehesionTests */,
+				00E356EF1AD99517003FC87E /* TemplateTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				A4D900FB1B06BEE396DFA9EA /* Pods */,
@@ -174,10 +174,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Codehesion.app */,
-				00E356EE1AD99517003FC87E /* CodehesionTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* Codehesion-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* Codehesion-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Template.app */,
+				00E356EE1AD99517003FC87E /* TemplateTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* Template-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* Template-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,14 +185,14 @@
 		A4D900FB1B06BEE396DFA9EA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4A200FA58D5941568CFA3776 /* Pods-Codehesion.debug.xcconfig */,
-				01301CC79EAF14DDF0B61637 /* Pods-Codehesion.release.xcconfig */,
-				8B5D542E05460FF93C3BE55C /* Pods-Codehesion-tvOS.debug.xcconfig */,
-				D5EA1F3826366B13BC433430 /* Pods-Codehesion-tvOS.release.xcconfig */,
-				CEE4EBBCCE4ED0A4E42F0FF6 /* Pods-Codehesion-tvOSTests.debug.xcconfig */,
-				92188DF138D530917EF0A109 /* Pods-Codehesion-tvOSTests.release.xcconfig */,
-				6CA3F0F6B7D1D96FC48A07FB /* Pods-CodehesionTests.debug.xcconfig */,
-				620FBA46CC20AE70BE1FBBDF /* Pods-CodehesionTests.release.xcconfig */,
+				4A200FA58D5941568CFA3776 /* Pods-Template.debug.xcconfig */,
+				01301CC79EAF14DDF0B61637 /* Pods-Template.release.xcconfig */,
+				8B5D542E05460FF93C3BE55C /* Pods-Template-tvOS.debug.xcconfig */,
+				D5EA1F3826366B13BC433430 /* Pods-Template-tvOS.release.xcconfig */,
+				CEE4EBBCCE4ED0A4E42F0FF6 /* Pods-Template-tvOSTests.debug.xcconfig */,
+				92188DF138D530917EF0A109 /* Pods-Template-tvOSTests.release.xcconfig */,
+				6CA3F0F6B7D1D96FC48A07FB /* Pods-TemplateTests.debug.xcconfig */,
+				620FBA46CC20AE70BE1FBBDF /* Pods-TemplateTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -200,9 +200,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* CodehesionTests */ = {
+		00E356ED1AD99517003FC87E /* TemplateTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CodehesionTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TemplateTests" */;
 			buildPhases = (
 				839D29D36190365F9F2C6D3C /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -214,14 +214,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = CodehesionTests;
-			productName = CodehesionTests;
-			productReference = 00E356EE1AD99517003FC87E /* CodehesionTests.xctest */;
+			name = TemplateTests;
+			productName = TemplateTests;
+			productReference = 00E356EE1AD99517003FC87E /* TemplateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* Codehesion */ = {
+		13B07F861A680F5B00A75B9A /* Template */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Codehesion" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Template" */;
 			buildPhases = (
 				0D3153F29AC1C20EACFDD97C /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -237,14 +237,14 @@
 			);
 			dependencies = (
 			);
-			name = Codehesion;
-			productName = Codehesion;
-			productReference = 13B07F961A680F5B00A75B9A /* Codehesion.app */;
+			name = Template;
+			productName = Template;
+			productReference = 13B07F961A680F5B00A75B9A /* Template.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* Codehesion-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* Template-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Codehesion-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Template-tvOS" */;
 			buildPhases = (
 				E12C63CC963D48EA64C830AD /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -257,14 +257,14 @@
 			);
 			dependencies = (
 			);
-			name = "Codehesion-tvOS";
-			productName = "Codehesion-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* Codehesion-tvOS.app */;
+			name = "Template-tvOS";
+			productName = "Template-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* Template-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* Codehesion-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* Template-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Codehesion-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Template-tvOSTests" */;
 			buildPhases = (
 				C7F9A05A39EFBF542E4BFFE2 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -276,9 +276,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "Codehesion-tvOSTests";
-			productName = "Codehesion-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* Codehesion-tvOSTests.xctest */;
+			name = "Template-tvOSTests";
+			productName = "Template-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* Template-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -305,7 +305,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Codehesion" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Template" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -319,10 +319,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* Codehesion */,
-				00E356ED1AD99517003FC87E /* CodehesionTests */,
-				2D02E47A1E0B4A5D006451C7 /* Codehesion-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* Codehesion-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* Template */,
+				00E356ED1AD99517003FC87E /* TemplateTests */,
+				2D02E47A1E0B4A5D006451C7 /* Template-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* Template-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -391,7 +391,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Codehesion-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Template-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -418,7 +418,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Codehesion/Pods-Codehesion-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Template/Pods-Template-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -457,7 +457,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Codehesion/Pods-Codehesion-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Template/Pods-Template-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4299EC55DA894B52DD7E1C3E /* [CP-User] [RNFB] Crashlytics Configuration */ = {
@@ -485,7 +485,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CodehesionTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TemplateTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -507,7 +507,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Codehesion-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Template-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -529,7 +529,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Codehesion-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Template-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -591,7 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* CodehesionTests.m in Sources */,
+				00E356F31AD99517003FC87E /* TemplateTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,7 +617,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* CodehesionTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* TemplateTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,12 +626,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* Codehesion */;
+			target = 13B07F861A680F5B00A75B9A /* Template */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* Codehesion-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* Template-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -643,7 +643,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = Codehesion;
+			path = Template;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -651,14 +651,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CA3F0F6B7D1D96FC48A07FB /* Pods-CodehesionTests.debug.xcconfig */;
+			baseConfigurationReference = 6CA3F0F6B7D1D96FC48A07FB /* Pods-TemplateTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CodehesionTests/Info.plist;
+				INFOPLIST_FILE = TemplateTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -668,17 +668,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Codehesion.app/Codehesion";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Template.app/Template";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 620FBA46CC20AE70BE1FBBDF /* Pods-CodehesionTests.release.xcconfig */;
+			baseConfigurationReference = 620FBA46CC20AE70BE1FBBDF /* Pods-TemplateTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = CodehesionTests/Info.plist;
+				INFOPLIST_FILE = TemplateTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -688,52 +688,52 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Codehesion.app/Codehesion";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Template.app/Template";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A200FA58D5941568CFA3776 /* Pods-Codehesion.debug.xcconfig */;
+			baseConfigurationReference = 4A200FA58D5941568CFA3776 /* Pods-Template.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = Codehesion/Info.plist;
+				INFOPLIST_FILE = Template/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Codehesion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codehesion.Template;
+				PRODUCT_NAME = Template;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01301CC79EAF14DDF0B61637 /* Pods-Codehesion.release.xcconfig */;
+			baseConfigurationReference = 01301CC79EAF14DDF0B61637 /* Pods-Template.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = Codehesion/Info.plist;
+				INFOPLIST_FILE = Template/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Codehesion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codehesion.Template;
+				PRODUCT_NAME = Template;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B5D542E05460FF93C3BE55C /* Pods-Codehesion-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 8B5D542E05460FF93C3BE55C /* Pods-Template-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -744,14 +744,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Codehesion-tvOS/Info.plist";
+				INFOPLIST_FILE = "Template-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Codehesion-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Template-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -761,7 +761,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5EA1F3826366B13BC433430 /* Pods-Codehesion-tvOS.release.xcconfig */;
+			baseConfigurationReference = D5EA1F3826366B13BC433430 /* Pods-Template-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -772,14 +772,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Codehesion-tvOS/Info.plist";
+				INFOPLIST_FILE = "Template-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Codehesion-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Template-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -789,7 +789,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEE4EBBCCE4ED0A4E42F0FF6 /* Pods-Codehesion-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = CEE4EBBCCE4ED0A4E42F0FF6 /* Pods-Template-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -799,24 +799,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Codehesion-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Template-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Codehesion-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Template-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Codehesion-tvOS.app/Codehesion-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Template-tvOS.app/Template-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92188DF138D530917EF0A109 /* Pods-Codehesion-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 92188DF138D530917EF0A109 /* Pods-Template-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -826,17 +826,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Codehesion-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Template-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Codehesion-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Template-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Codehesion-tvOS.app/Codehesion-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Template-tvOS.app/Template-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -943,7 +943,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CodehesionTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TemplateTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -952,7 +952,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Codehesion" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Template" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -961,7 +961,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Codehesion-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Template-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -970,7 +970,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Codehesion-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Template-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -979,7 +979,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Codehesion" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Template" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
