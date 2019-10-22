@@ -6,7 +6,8 @@ import { connect } from 'react-redux';
 import NavBar from './components/common/nav-bar.component';
 import ModalLightbox from './scenes/modal-lightbox/modal.lightbox';
 import NavBarBack from './components/common/nav-bar-back.component';
-import HomeScene from './scenes/home/home.scene';
+import HomeScene from './scenes/home/home.container';
+import DrawerScene from './scenes/drawer/drawer.container';
 
 const RouterWithRedux = connect()(Router);
 
@@ -15,13 +16,15 @@ const RouterComponent = () => {
         <RouterWithRedux navigationBarStyle={styles.navBar} navBar={NavBar}>
             <Lightbox>
                 <Stack key="root">
-                    <Scene
-                        key={HomeScene.key}
-                        component={HomeScene}
-                        title="Home"
-                        initial
-                        hideNavBar={false}
-                    />
+                    <Scene drawer key={DrawerScene.key} contentComponent={DrawerScene} hideNavBar>
+                        <Scene
+                            key={HomeScene.key}
+                            component={HomeScene}
+                            title="Home"
+                            initial
+                            hideNavBar={false}
+                        />
+                    </Scene>
                 </Stack>
                 <Scene
                     key={ModalLightbox.key}
