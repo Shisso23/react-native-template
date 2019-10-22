@@ -1,4 +1,4 @@
 module.exports = {
-    placeholderName: 'codehesion',
+    placeholderName: 'Codehesion',
     templateDir: './template'
 };

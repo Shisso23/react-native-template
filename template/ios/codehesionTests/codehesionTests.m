@@ -14,11 +14,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface codehesionTests : XCTestCase
+@interface CodehesionTests : XCTestCase
 
 @end
 
-@implementation codehesionTests
+@implementation CodehesionTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {
