@@ -14,7 +14,7 @@ You also need to install the dependencies required by React Native:
 
 ## Installation
 ```sh
-npx react-native init MyApp --template https://gitlab.com/codehesionza/react-native-template-codehesion.git
+npx react-native init MyApp --template @codehesionza/react-native-template-codehesion
 ```
 
 ## Content

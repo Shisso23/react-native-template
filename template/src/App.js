@@ -16,7 +16,15 @@ import theme from '../theme/theme';
 import Router from './Router';
 import { applyMiddleware, createStore } from 'redux';
 
-export const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
+const middleware = [ReduxThunk];
+
+if (process.env.NODE_ENV === `development`) {
+    const { logger } = require(`redux-logger`);
+
+    middleware.push(logger);
+}
+
+export const store = createStore(reducers, {}, applyMiddleware(...middleware));
 
 export default class App extends Component {
     render() {
