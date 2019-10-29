@@ -13,7 +13,13 @@ You also need to install the dependencies required by React Native:
 - for [iOS development](https://facebook.github.io/react-native/docs/getting-started.html#installing-dependencies)
 
 ## Installation
-```sh
+First, add the following to your `.npmrc` file to allow npm to use the Codehesion package repo (more info on the `.npmrc` file can be found [here](https://docs.npmjs.com/files/npmrc)):
+```
+@codehesionza:registry=https://gitlab.com/api/v4/packages/npm/
+```
+
+Then, run the following command (changing `MyApp` to the name of your app):
+```
 npx react-native init MyApp --template @codehesionza/react-native-template-codehesion
 ```
 
