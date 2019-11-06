@@ -4,7 +4,7 @@ export default class NetworkError extends Error {
     constructor(statusCode, error) {
         super(error);
 
-        this.message = _.get(error, 'message');
+        this.message = _.get(error, 'error');
         this.statusCode = statusCode;
     }
 }
