@@ -13,7 +13,7 @@ export const getErrorAlert = ({ message = 'Error', errors = {} }) => {
                 0
             )}\n`;
         },
-        message
+        `${message}\n`
     );
 
     Actions.push(ModalLightbox.key, {
