@@ -7,6 +7,15 @@ The boilerplate provides an architecture optimized for building cross-platform m
 
 Node 8 or greater is required. Development for iOS requires a Mac and Xcode 9 or up, and will target iOS 9 and up.
 
+The Cocoapods Package Manager is required by React Native 0.60 and up. There is also a script in the package.json file that installs pods after yarn/npm install has run. 
+This can be removed once you're up and running, but the first install of the template requires that Cocoapods is installed.
+
+To insntall Cocoapods run:
+```
+sudo gem install cocoapods
+```
+Or go to the [Cocoapods Website](https://cocoapods.org/).
+
 You also need to install the dependencies required by React Native:
 
 - for [Android development](https://facebook.github.io/react-native/docs/getting-started.html#installing-dependencies-3)
@@ -22,6 +31,9 @@ Then, run the following command (changing `MyApp` to the name of your app):
 ```
 npx react-native init MyApp --template @codehesionza/react-native-template-codehesion
 ```
+
+**PLEASE NOTE:** This template requires that you're running at least version 2.0.0 of the React Native CLI. 
+If you're using [npx](https://www.npmjs.com/package/npx), but the React Native CLI has already been globally installed on your machine, you will either need to update the global version of React Native CLI on your machine or remove it from your globally installed NPM packages.
 
 ## Content
 
