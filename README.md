@@ -32,8 +32,9 @@ Then, run the following command (changing `MyApp` to the name of your app):
 npx react-native init MyApp --template @codehesionza/react-native-template-codehesion
 ```
 
-**PLEASE NOTE:** This template requires that you're running at least version 2.0.0 of the React Native CLI. 
-If you're using [npx](https://www.npmjs.com/package/npx), but the React Native CLI has already been globally installed on your machine, you will either need to update the global version of React Native CLI on your machine or remove it from your globally installed NPM packages.
+**PLEASE NOTE:** This template only works with the new CLI. Make sure you have uninstalled the legacy `react-native-cli` first (`npm uninstall -g react-native-cli`), for the above command to work. If you wish to not use `npx`, you can also install the new CLI globally (`npm i -g @react-native-community/cli` or `yarn global add @react-native-community/cli`).
+
+Further information can be found here: https://github.com/react-native-community/cli#about
 
 ## Content
 
@@ -58,8 +59,3 @@ The boilerplate contains:
 - [`src/services`](template/src/services): application services, e.g. API clients
 - [`src/reducers`](template/src/reducers): redux [actions, reducers and stores](https://redux.js.org/basics)
 - [`theme`](template/theme): base styles and colors for the application
-
-## Note on the legacy CLI
-Please note, this template only works with the new CLI. Make sure you have uninstalled the legacy `react-native-cli` first (`npm uninstall -g react-native-cli`), for the above command to work. If you wish to not use `npx`, you can also install the new CLI globally (`npm i -g @react-native-community/cli` or `yarn global add @react-native-community/cli`).
-
-Further information can be found here: https://github.com/react-native-community/cli#about
