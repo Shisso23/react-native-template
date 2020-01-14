@@ -27,6 +27,12 @@ First, add the following to your `.npmrc` file to allow npm to use the Codehesio
 @codehesionza:registry=https://gitlab.com/api/v4/packages/npm/
 ```
 
+For ease of use, you can run the following:
+```
+touch ~/.npmrc
+echo "@codehesionza:registry=https://gitlab.com/api/v4/packages/npm/" >> ~/.npmrc
+```
+
 Then, run the following command (changing `MyApp` to the name of your app):
 ```
 npx react-native init MyApp --template @codehesionza/react-native-template-codehesion
