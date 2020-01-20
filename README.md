@@ -46,7 +46,7 @@ Further information can be found here: https://github.com/react-native-community
 
 The boilerplate contains:
 
-- a [React Native](https://facebook.github.io/react-native/) (v**0.61.2**) application (in "[ejected](https://github.com/react-community/create-react-native-app/blob/master/EJECTING.md)" mode to allow using dependencies that rely on native code)
+- a [React Native](https://facebook.github.io/react-native/) (v**0.61.5**) application (in "[ejected](https://github.com/react-community/create-react-native-app/blob/master/EJECTING.md)" mode to allow using dependencies that rely on native code)
 - a [clear directory layout](#directory-layout) to provide a base architecture for your application
 - [Redux](https://redux.js.org/) (v4.0.1) to help manage state
 - [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) (v4.1.0-beta.5), a state based navigation library with a [`Router`](template/src/Router.js) to handle routing and navigation in the app
