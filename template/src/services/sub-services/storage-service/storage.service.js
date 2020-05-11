@@ -6,9 +6,13 @@ function saveItem(key, value) {
     if (_.isObject(value)) {
         saveValue = JSON.stringify(value);
     }
-    return AsyncStorage.setItem(key, saveValue).catch((error) =>
-        console.warn(`WARNING: Failed to save item with key: ${key}. Error: ${error.message}`)
-    );
+    return AsyncStorage.setItem(key, saveValue)
+        .then(() => {
+            return saveValue;
+        })
+        .catch((error) =>
+            console.warn(`WARNING: Failed to save item with key: ${key}. Error: ${error.message}`)
+        );
 }
 
 function getItem(key) {

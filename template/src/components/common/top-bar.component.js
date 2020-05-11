@@ -20,7 +20,14 @@ export default class TopBar extends Component {
             return null;
         }
 
-        return <Button icon={{ name: leftButtonIcon, color: colors.white, type: 'font-awesome' }} type="clear" hitSlop={hitSlopOptions} onPress={leftButtonAction} />;
+        return (
+            <Button
+                icon={{ name: leftButtonIcon, color: colors.white, type: 'font-awesome' }}
+                type="clear"
+                hitSlop={hitSlopOptions}
+                onPress={leftButtonAction}
+            />
+        );
     }
 }
 

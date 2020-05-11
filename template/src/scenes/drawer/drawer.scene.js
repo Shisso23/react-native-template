@@ -1,26 +1,44 @@
 import React, { Component } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
-import { Actions } from 'react-native-router-flux';
 import { Button, Icon, ListItem } from 'react-native-elements';
 import _ from 'lodash';
+import PropTypes from 'prop-types';
+import { boundMethod } from 'autobind-decorator';
 
 import colors from '../../../theme/colors';
-import HomeScene from '../home/home.scene';
+import { NAVIGATORS } from '../../navigation/app-navigation.component';
+import HomeScene from '../app/home/home.scene';
 
 export default class DrawerScene extends Component {
     constructor(props) {
         super(props);
-
         this.menuItems = [
-            { title: 'Home', icon: 'home', action: DrawerScene.onHome }
+            { title: 'Home', icon: 'home', action: this.onHome },
+            { title: 'Logout', icon: 'sign-out', action: this.onLogout }
         ];
     }
-    static onClosePress() {
-        Actions.drawerClose();
+
+    static propTypes = {
+        navigation: PropTypes.object,
+        signOut: PropTypes.func
+    };
+
+    @boundMethod
+    onClosePress() {
+        this.props.navigation.closeDrawer();
     }
 
-    static onHome() {
-        Actions[HomeScene.key].call();
+    @boundMethod
+    onHome() {
+        this.props.navigation.navigate(NAVIGATORS.APP, { screen: HomeScene.key });
+    }
+
+    @boundMethod
+    onLogout() {
+        const { signOut } = this.props;
+        if (signOut) {
+            signOut();
+        }
     }
 
     render() {
@@ -31,7 +49,7 @@ export default class DrawerScene extends Component {
                     <Button
                         icon={<Icon active name="arrow-right" style={styles.iconStyle} />}
                         type="clear"
-                        onPress={DrawerScene.onClosePress}
+                        onPress={this.onClosePress}
                         style={styles.closeButton}
                     />
                 </SafeAreaView>
@@ -79,5 +97,3 @@ const styles = StyleSheet.create({
         marginLeft: 18
     }
 });
-
-DrawerScene.key = 'drawer';

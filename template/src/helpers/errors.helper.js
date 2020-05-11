@@ -1,8 +1,7 @@
-import { Actions } from 'react-native-router-flux';
+import { StackActions } from '@react-navigation/compat';
 import _ from 'lodash';
 
 import colors from '../../theme/colors';
-import ModalLightbox from '../scenes/modal-lightbox/modal.lightbox';
 
 export const getErrorAlert = ({ message = 'Error', errors = {} }) => {
     const errorMessages = _.reduce(
@@ -16,9 +15,12 @@ export const getErrorAlert = ({ message = 'Error', errors = {} }) => {
         `${message}\n`
     );
 
-    Actions.push(ModalLightbox.key, {
-        content: `${errorMessages}`,
-        title: message,
-        backgroundColour: colors.orange
+    StackActions.push({
+        routeName: 'ModalLightbox',
+        params: {
+            content: `${errorMessages}`,
+            title: message,
+            backgroundColour: colors.orange
+        }
     });
 };

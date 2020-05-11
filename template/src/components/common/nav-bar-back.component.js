@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Actions } from 'react-native-router-flux';
+import { NavigationActions } from '@react-navigation/compat';
 import PropTypes from 'prop-types';
 
 import TopBar from './top-bar.component';
 
 export default class NavBarBack extends Component {
     static onNavPress() {
-        Actions.pop();
+        NavigationActions.back();
     }
 
     render() {
