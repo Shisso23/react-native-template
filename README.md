@@ -10,7 +10,7 @@ Node 8 or greater is required. Development for iOS requires a Mac and Xcode 9 or
 The Cocoapods Package Manager is required by React Native 0.60 and up. There is also a script in the package.json file that installs pods after yarn/npm install has run. 
 This can be removed once you're up and running, but the first install of the template requires that Cocoapods is installed.
 
-To insntall Cocoapods run:
+To install Cocoapods run:
 ```
 sudo gem install cocoapods
 ```

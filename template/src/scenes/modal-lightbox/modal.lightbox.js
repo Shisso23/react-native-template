@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Animated, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Button } from 'react-native-elements';
-import { Actions } from 'react-native-router-flux';
+import { NavigationActions } from '@react-navigation/compat';
 
 import colors from '../../../theme/colors';
 import { boundMethod } from 'autobind-decorator';
@@ -36,7 +36,7 @@ export default class ModalLightbox extends Component {
         Animated.timing(this.state.opacity, {
             duration: 200,
             toValue: 0
-        }).start(Actions.pop);
+        }).start(NavigationActions.back);
     }
 
     renderLightBox() {
