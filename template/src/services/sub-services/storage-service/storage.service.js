@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-community/async-storage';
 import _ from 'lodash';
 
-function saveItem(key, value) {
+function setItem(key, value) {
     let saveValue = value;
     if (_.isObject(value)) {
         saveValue = JSON.stringify(value);
@@ -38,7 +38,7 @@ function removeItem(key) {
 }
 
 export default {
-    saveItem,
+    setItem,
     getItem,
     removeItem
 };

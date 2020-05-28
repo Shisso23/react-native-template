@@ -1,6 +1,6 @@
 import userUrls from './user.urls';
 import networkService, { defaultRequestConfig } from '../network-service/network.service';
-import storageService from '../storage-service/storage.service';
+import {storageService} from '../../services';
 import config from '../../../config';
 import _ from 'lodash';
 import base64 from 'base-64';
