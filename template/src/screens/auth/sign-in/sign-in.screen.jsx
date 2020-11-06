@@ -20,10 +20,7 @@ const SignInScreen = () => {
       <SignInForm
         submitForm={userAuthService.signIn}
         onSuccess={_onSignInSuccess}
-        initialValues={signInModel({
-          email: 'brendon@codehesion.co.za',
-          password: '123456789',
-        })}
+        initialValues={signInModel()}
       />
       <RegisterLink containerStyle={styles.registerLink} />
       <ForgotPasswordLink containerStyle={styles.forgotPasswordLink} />
