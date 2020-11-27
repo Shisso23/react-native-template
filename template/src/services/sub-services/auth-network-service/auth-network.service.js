@@ -9,7 +9,7 @@ import {
 } from '../utils/interceptors';
 import storageService from '../storage-service/storage.service';
 
-const axios = ax.create({
+const authNetworkService = ax.create({
   timeout: 5000,
   headers: {
     Accept: 'application/json',
@@ -21,7 +21,7 @@ const axios = ax.create({
 const refreshTokenLogic = () => {
   const _tryToRefreshToken = (refreshOAuthData) => {
     const tokenUrl = userAuthUrls.tokenUrl();
-    return axios.post(tokenUrl, refreshOAuthData);
+    return ax.post(tokenUrl, refreshOAuthData);
   };
 
   const _storeNewTokens = (apiResponse) => {
@@ -38,8 +38,8 @@ const refreshTokenLogic = () => {
     });
 };
 
-createAttachTokenInterceptor(axios, storageService.getAccessToken);
-createAuthRefreshInterceptor(axios, refreshTokenLogic);
-createNetworkErrorHandlerInterceptor(axios);
+createAttachTokenInterceptor(authNetworkService, storageService.getAccessToken);
+createAuthRefreshInterceptor(authNetworkService, refreshTokenLogic);
+createNetworkErrorHandlerInterceptor(authNetworkService);
 
-export default axios;
+export default authNetworkService;
