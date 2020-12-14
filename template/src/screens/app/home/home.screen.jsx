@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { View } from 'react-native';
 import { Button } from 'react-native-elements';
-import { useNavigation, useFocusEffect } from '@react-navigation/native';
+import { useFocusEffect } from '@react-navigation/native';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { exitAppOnHardwarePressListener } from '../../../helpers';
@@ -11,7 +11,6 @@ const { CancelToken } = axios;
 
 const HomeScreen = () => {
   const requestSource = CancelToken.source();
-  const navigation = useNavigation();
   const dispatch = useDispatch();
 
   useFocusEffect(exitAppOnHardwarePressListener, []);
@@ -28,7 +27,6 @@ const HomeScreen = () => {
 
   return (
     <View>
-      <Button title="Open Drawer" onPress={() => navigation.openDrawer()} />
       <Button title="Sign Out" onPress={_signOut} />
     </View>
   );

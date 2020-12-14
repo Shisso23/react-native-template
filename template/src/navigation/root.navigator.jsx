@@ -6,11 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import AuthNavigator from './auth/auth.navigator';
 import AppNavigator from './app/app.navigator';
 
-// Global Screens
-import TermsAndConditionsScreen from '../screens/global/terms-and-conditions/terms-and-conditions.screen';
-
 const RootStack = createStackNavigator();
-
 const AppContainer = () => {
   const { isAuthenticated } = useSelector((reducer) => reducer.userAuthReducer);
   return (
@@ -21,14 +17,6 @@ const AppContainer = () => {
         ) : (
           <RootStack.Screen name="AUTH" component={AuthNavigator} />
         )}
-        <RootStack.Screen
-          name="TermsAndConditions"
-          component={TermsAndConditionsScreen}
-          options={{
-            headerShown: true,
-            title: 'Terms And Conditions',
-          }}
-        />
       </RootStack.Navigator>
     </NavigationContainer>
   );
