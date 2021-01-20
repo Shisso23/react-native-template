@@ -5,14 +5,14 @@ import { RegisterLink, ForgotPasswordLink } from '../../../components/atoms';
 import { SignInForm } from '../../../components/forms';
 
 import { userAuthService } from '../../../services';
-import { setIsAuthenticatedAction } from '../../../reducers/user-auth-reducer/user-auth.reducer';
 import { signInModel } from '../../../models';
+import { isAuthenticatedFlowAction } from '../../../reducers/app-reducer/app.actions';
 
 const SignInScreen = () => {
   const dispatch = useDispatch();
 
   const _onSignInSuccess = () => {
-    dispatch(setIsAuthenticatedAction(true));
+    dispatch(isAuthenticatedFlowAction());
   };
   return (
     <View style={styles.pageWrapper}>
