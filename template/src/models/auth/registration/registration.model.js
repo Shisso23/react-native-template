@@ -1,30 +1,20 @@
 /* eslint-disable camelcase */
-export const registrationUserModel = ({
-  email,
-  name,
-  password,
-  password_confirmation,
-  terms_and_conditions,
-} = {}) => ({
-  email: email || '',
-  name: name || '',
-  password: password || '',
-  confirmPassword: password_confirmation || '',
-  termsAndConditions: terms_and_conditions || true,
+import _ from 'lodash';
+
+export const registrationUserModel = (_apiRegistrationsModel = {}) => ({
+  email: _.get(_apiRegistrationsModel, 'email', ''),
+  name: _.get(_apiRegistrationsModel, 'name', ''),
+  password: _.get(_apiRegistrationsModel, 'password', ''),
+  confirmPassword: _.get(_apiRegistrationsModel, 'password_confirmation', ''),
+  termsAndConditions: _.get(_apiRegistrationsModel, 'terms_and_conditions', false),
 });
 
-export const apiRegistrationUserModel = ({
-  email,
-  name,
-  password,
-  confirmPassword,
-  termsAndConditions,
-} = {}) => ({
+export const apiRegistrationUserModel = (_appRegistrationsModel = {}) => ({
   user: {
-    email: email || '',
-    name: name || '',
-    password: password || '',
-    password_confirmation: confirmPassword || '',
-    terms_and_conditions: termsAndConditions || true,
+    email: _.get(_appRegistrationsModel, 'email', ''),
+    name: _.get(_appRegistrationsModel, 'name', ''),
+    password: _.get(_appRegistrationsModel, 'password', ''),
+    password_confirmation: _.get(_appRegistrationsModel, 'confirmPassword', ''),
+    terms_and_conditions: _.get(_appRegistrationsModel, 'termsAndConditions', false),
   },
 });

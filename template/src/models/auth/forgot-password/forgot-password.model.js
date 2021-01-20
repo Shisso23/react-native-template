@@ -1,10 +1,12 @@
 /* eslint-disable camelcase */
-export const forgotPasswordModel = ({ email } = {}) => ({
-  email: email || '',
+import _ from 'lodash';
+
+export const forgotPasswordModel = (_apiForgotPasswordModel = {}) => ({
+  email: _.get(_apiForgotPasswordModel, 'email', ''),
 });
 
-export const apiForgotPasswordModel = ({ email } = {}) => ({
+export const apiForgotPasswordModel = (_appForgotPasswordModel = {}) => ({
   user: {
-    email: email || '',
+    email: _.get(_appForgotPasswordModel, 'email', ''),
   },
 });

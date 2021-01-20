@@ -1,12 +1,14 @@
 /* eslint-disable camelcase */
-export const userModel = ({ email, name } = {}) => ({
-  email: email || '',
-  name: name || '',
+import _ from 'lodash';
+
+export const userModel = (_apiUserModel = {}) => ({
+  email: _.get(_apiUserModel, 'email', ''),
+  name: _.get(_apiUserModel, 'name', ''),
 });
 
-export const apiUserModel = ({ email, name } = {}) => ({
+export const apiUserModel = (_appUserModel = {}) => ({
   user: {
-    email: email || '',
-    name: name || '',
+    email: _.get(_appUserModel, 'email', ''),
+    name: _.get(_appUserModel, 'name', ''),
   },
 });
