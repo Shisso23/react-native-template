@@ -1,29 +1,24 @@
 import React from 'react';
-import { StyleSheet, TouchableOpacity, View, ViewPropTypes } from 'react-native';
+import { TouchableOpacity, View, ViewPropTypes } from 'react-native';
 import { Text } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
+import useTheme from '../../../theme/hooks/useTheme';
 
 const ForgotPasswordLink = ({ containerStyle }) => {
   const navigation = useNavigation();
+  const { Layout, Common } = useTheme();
   return (
     <View style={containerStyle}>
       <TouchableOpacity
-        style={styles.alignCenter}
+        style={[Layout.center]}
         delayPressIn={0}
         onPress={() => navigation.push('ForgotPassword')}
       >
-        <Text>Forgot Password</Text>
+        <Text style={[Common.link]}>Forgot Password</Text>
       </TouchableOpacity>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  alignCenter: {
-    alignSelf: 'center',
-    justifyContent: 'center',
-  },
-});
 
 ForgotPasswordLink.propTypes = {
   containerStyle: ViewPropTypes.style,

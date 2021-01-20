@@ -1,9 +1,8 @@
 import React from 'react';
 import _ from 'lodash';
-import { ViewPropTypes, Text } from 'react-native';
+import { Text } from 'react-native';
 import PropTypes from 'prop-types';
 import { Formik } from 'formik';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import * as Yup from 'yup';
 
 import { Button, Input } from 'react-native-elements';
@@ -17,7 +16,7 @@ import { getFormError } from '../form-utils';
 import { TermsAndConditions } from '../../atoms';
 import { flashService } from '../../../services';
 
-const UserInfoForm = ({ edit, submitForm, onSuccess, containerStyle, initialValues }) => {
+const UserInfoForm = ({ edit, submitForm, onSuccess, initialValues }) => {
   const validationSchema = Yup.object().shape({
     email: emailSchema,
     name: Yup.string().required('Name is required'),
@@ -44,82 +43,77 @@ const UserInfoForm = ({ edit, submitForm, onSuccess, containerStyle, initialValu
   };
 
   return (
-    <KeyboardAwareScrollView
-      keyboardShouldPersistTaps="handled"
-      contentContainerStyle={containerStyle}
+    <Formik
+      initialValues={initialValues}
+      initialStatus={{ apiErrors: {} }}
+      onSubmit={_handleSubmission}
+      validationSchema={validationSchema}
+      enableReinitialize
     >
-      <Formik
-        initialValues={initialValues}
-        initialStatus={{ apiErrors: {} }}
-        onSubmit={_handleSubmission}
-        validationSchema={validationSchema}
-        enableReinitialize
-      >
-        {({
-          handleChange,
-          handleSubmit,
-          values,
-          errors,
-          isSubmitting,
-          handleBlur,
-          touched,
-          status,
-          setFieldValue,
-        }) => {
-          const error = (name) => getFormError(name, { touched, status, errors });
-          return (
-            <>
-              <Input
-                value={values.email}
-                onChangeText={handleChange('email')}
-                onBlur={handleBlur('email')}
-                label="Email"
-                errorMessage={error('email')}
-              />
-              <Input
-                value={values.name}
-                onChangeText={handleChange('name')}
-                onBlur={handleBlur('name')}
-                label="Name"
-                errorMessage={error('name')}
-              />
-              {!edit && (
-                <>
-                  <Input
-                    value={values.password}
-                    onChangeText={handleChange('password')}
-                    label="Password"
-                    secureTextEntry
-                    onBlur={handleBlur('password')}
-                    errorMessage={error('password')}
-                  />
-                  <Input
-                    value={values.confirmPassword}
-                    onChangeText={handleChange('confirmPassword')}
-                    label="Confirm Password"
-                    secureTextEntry
-                    onBlur={handleBlur('confirmPassword')}
-                    errorMessage={error('confirmPassword')}
-                  />
-                </>
-              )}
-              <Button
-                title={!edit ? 'Register' : 'Update'}
-                onPress={handleSubmit}
-                loading={isSubmitting}
-              />
-              {!edit && (
-                <TermsAndConditions
-                  checked={values.termsAndConditions}
-                  onPress={() => setFieldValue('termsAndConditions', !values.termsAndConditions)}
+      {({
+        handleChange,
+        handleSubmit,
+        values,
+        errors,
+        isSubmitting,
+        handleBlur,
+        touched,
+        status,
+        setFieldValue,
+      }) => {
+        const error = (name) => getFormError(name, { touched, status, errors });
+        return (
+          <>
+            <Input
+              value={values.email}
+              onChangeText={handleChange('email')}
+              onBlur={handleBlur('email')}
+              label="Email"
+              errorMessage={error('email')}
+            />
+            <Input
+              value={values.name}
+              onChangeText={handleChange('name')}
+              onBlur={handleBlur('name')}
+              label="Name"
+              errorMessage={error('name')}
+            />
+            {!edit && (
+              <>
+                <Input
+                  value={values.password}
+                  onChangeText={handleChange('password')}
+                  label="Password"
+                  secureTextEntry
+                  onBlur={handleBlur('password')}
+                  errorMessage={error('password')}
                 />
-              )}
-              {__DEV__ && <Text>{JSON.stringify(values, null, 2)}</Text>}
-            </>
-          );
-        }}
-      </Formik>
-    </KeyboardAwareScrollView>
+                <Input
+                  value={values.confirmPassword}
+                  onChangeText={handleChange('confirmPassword')}
+                  label="Confirm Password"
+                  secureTextEntry
+                  onBlur={handleBlur('confirmPassword')}
+                  errorMessage={error('confirmPassword')}
+                />
+              </>
+            )}
+            <Button
+              title={!edit ? 'Register' : 'Update'}
+              onPress={handleSubmit}
+              loading={isSubmitting}
+            />
+            {!edit && (
+              <TermsAndConditions
+                checked={values.termsAndConditions}
+                onPress={() => setFieldValue('termsAndConditions', !values.termsAndConditions)}
+              />
+            )}
+            {__DEV__ && <Text>{JSON.stringify(values, null, 2)}</Text>}
+          </>
+        );
+      }}
+    </Formik>
   );
 };
 
@@ -127,13 +121,11 @@ UserInfoForm.propTypes = {
   submitForm: PropTypes.func.isRequired,
   initialValues: PropTypes.object.isRequired,
   onSuccess: PropTypes.func,
-  containerStyle: ViewPropTypes.style,
   edit: PropTypes.bool,
 };
 
 UserInfoForm.defaultProps = {
   onSuccess: () => null,
-  containerStyle: {},
   edit: false,
 };
 

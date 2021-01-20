@@ -4,11 +4,13 @@ import { createStackNavigator } from '@react-navigation/stack';
 import SignInScreen from '../../screens/auth/sign-in/sign-in.screen';
 import ForgotPasswordScene from '../../screens/auth/forgot-password/forgot-password.screen';
 import RegisterScene from '../../screens/auth/register/register.screen';
+import useTheme from '../../theme/hooks/useTheme';
 
 const AuthStack = createStackNavigator();
 const AuthNavigator = () => {
+  const { Custom } = useTheme();
   return (
-    <AuthStack.Navigator>
+    <AuthStack.Navigator screenOptions={Custom.globalNavigatorScreenOptions}>
       <AuthStack.Screen
         name="SignIn"
         component={SignInScreen}

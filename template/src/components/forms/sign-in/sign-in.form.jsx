@@ -1,9 +1,8 @@
 import React from 'react';
 import _ from 'lodash';
-import { ViewPropTypes } from 'react-native';
+import { ViewPropTypes, View } from 'react-native';
 import PropTypes from 'prop-types';
 import { Formik } from 'formik';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import * as Yup from 'yup';
 
 import { Button, Input } from 'react-native-elements';
@@ -38,10 +37,7 @@ const SignInForm = ({ submitForm, onSuccess, containerStyle, initialValues }) =>
   };
 
   return (
-    <KeyboardAwareScrollView
-      keyboardShouldPersistTaps="handled"
-      contentContainerStyle={containerStyle}
-    >
+    <View style={containerStyle}>
       <Formik
         initialValues={initialValues}
         initialStatus={{ apiErrors: {} }}
@@ -81,7 +77,7 @@ const SignInForm = ({ submitForm, onSuccess, containerStyle, initialValues }) =>
           );
         }}
       </Formik>
-    </KeyboardAwareScrollView>
+    </View>
   );
 };
 

@@ -8,14 +8,14 @@ import { Provider } from 'react-redux';
 
 import { name as appName } from './app.json';
 import App from './src/App';
-import theme from './theme/theme';
+import theme from './src/theme/react-native-elements-theme';
 import store from './src/reducers/store';
 
 const Root = () => (
   <SafeAreaProvider>
     <ThemeProvider theme={theme}>
       <Provider store={store}>
-          <App />
+        <App />
         <Toast ref={(ref) => Toast.setRef(ref)} />
       </Provider>
     </ThemeProvider>

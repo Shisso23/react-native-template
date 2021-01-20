@@ -1,17 +1,17 @@
 import React from 'react';
-import { View } from 'react-native';
 import { ForgotPasswordForm } from '../../../components/forms';
 import { userAuthService } from '../../../services';
 import { forgotPasswordModel } from '../../../models';
+import { FormScreenContainer } from '../../../components';
 
 const ForgotPasswordScreen = () => {
   return (
-    <View>
+    <FormScreenContainer>
       <ForgotPasswordForm
         submitForm={userAuthService.forgotPassword}
         initialValues={forgotPasswordModel()}
       />
-    </View>
+    </FormScreenContainer>
   );
 };
 

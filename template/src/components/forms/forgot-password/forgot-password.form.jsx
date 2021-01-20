@@ -3,7 +3,6 @@ import _ from 'lodash';
 import { ViewPropTypes, Text } from 'react-native';
 import PropTypes from 'prop-types';
 import { Formik } from 'formik';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import * as Yup from 'yup';
 
 import { Button, Input } from 'react-native-elements';
@@ -11,7 +10,7 @@ import { emailSchema } from '../form-validaton-schemas';
 import { getFormError } from '../form-utils';
 import { flashService } from '../../../services';
 
-const ForgotPasswordForm = ({ submitForm, onSuccess, containerStyle, initialValues }) => {
+const ForgotPasswordForm = ({ submitForm, onSuccess, initialValues }) => {
   const validationSchema = Yup.object().shape({
     email: emailSchema,
   });
@@ -36,44 +35,39 @@ const ForgotPasswordForm = ({ submitForm, onSuccess, containerStyle, initialValu
   };
 
   return (
-    <KeyboardAwareScrollView
-      keyboardShouldPersistTaps="handled"
-      contentContainerStyle={containerStyle}
+    <Formik
+      initialValues={initialValues}
+      initialStatus={{ apiErrors: {} }}
+      onSubmit={_handleSubmission}
+      validationSchema={validationSchema}
+      enableReinitialize
     >
-      <Formik
-        initialValues={initialValues}
-        initialStatus={{ apiErrors: {} }}
-        onSubmit={_handleSubmission}
-        validationSchema={validationSchema}
-        enableReinitialize
-      >
-        {({
-          handleChange,
-          handleSubmit,
-          values,
-          errors,
-          isSubmitting,
-          handleBlur,
-          touched,
-          status,
-        }) => {
-          const error = (name) => getFormError(name, { touched, status, errors });
-          return (
-            <>
-              <Input
-                value={values.email}
-                onChangeText={handleChange('email')}
-                onBlur={handleBlur('email')}
-                label="Email"
-                errorMessage={error('email')}
-              />
-              <Button title="Submit" onPress={handleSubmit} loading={isSubmitting} />
-              {__DEV__ && <Text>{JSON.stringify(values, null, 2)}</Text>}
-            </>
-          );
-        }}
-      </Formik>
-    </KeyboardAwareScrollView>
+      {({
+        handleChange,
+        handleSubmit,
+        values,
+        errors,
+        isSubmitting,
+        handleBlur,
+        touched,
+        status,
+      }) => {
+        const error = (name) => getFormError(name, { touched, status, errors });
+        return (
+          <>
+            <Input
+              value={values.email}
+              onChangeText={handleChange('email')}
+              onBlur={handleBlur('email')}
+              label="Email"
+              errorMessage={error('email')}
+            />
+            <Button title="Submit" onPress={handleSubmit} loading={isSubmitting} />
+            {__DEV__ && <Text>{JSON.stringify(values, null, 2)}</Text>}
+          </>
+        );
+      }}
+    </Formik>
   );
 };
 
