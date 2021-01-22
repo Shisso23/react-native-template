@@ -1,44 +1,19 @@
-import AsyncStorage from '@react-native-community/async-storage';
-import _ from 'lodash';
+import config from '../../../config';
+import { saveItem, getItem, removeItem } from './storage.service.utils';
 
-function setItem(key, value) {
-    let saveValue = value;
-    if (_.isObject(value)) {
-        saveValue = JSON.stringify(value);
-    }
-    return AsyncStorage.setItem(key, saveValue)
-        .then(() => {
-            return saveValue;
-        })
-        .catch((error) =>
-            console.warn(`WARNING: Failed to save item with key: ${key}. Error: ${error.message}`)
-        );
-}
+const accessTokenOperations = {
+  getAccessToken: () => getItem(config.accessTokenKey),
+  storeAccessToken: (token) => saveItem(config.accessTokenKey, token),
+  removeAccessToken: () => removeItem(config.accessTokenKey),
+};
 
-function getItem(key) {
-    return AsyncStorage.getItem(key)
-        .then((value) => {
-            try {
-                return JSON.parse(value);
-            } catch (error) {
-                return value;
-            }
-        })
-        .catch((error) => {
-            console.warn(`WARNING: Failed to get item with key: ${key}. Error: ${error.message}`);
-            return null;
-        });
-}
-
-function removeItem(key) {
-    return AsyncStorage.removeItem(key).catch((error) => {
-        console.warn(`WARNING: Failed to remove item with key: ${key}. Error: ${error.message}`);
-        return null;
-    });
-}
+const refreshTokenOperations = {
+  getRefreshToken: () => getItem(config.refreshTokenKey),
+  storeRefreshToken: (token) => saveItem(config.refreshTokenKey, token),
+  removeRefreshToken: () => removeItem(config.refreshTokenKey),
+};
 
 export default {
-    setItem,
-    getItem,
-    removeItem
+  ...accessTokenOperations,
+  ...refreshTokenOperations,
 };
