@@ -70,6 +70,7 @@ const UserInfoForm = ({ edit, submitForm, onSuccess, initialValues }) => {
               onBlur={handleBlur('email')}
               label="Email"
               errorMessage={error('email')}
+              keyboardType="email-address"
             />
             <Input
               value={values.name}
