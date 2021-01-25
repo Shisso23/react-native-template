@@ -63,6 +63,7 @@ const SignInForm = ({ submitForm, onSuccess, containerStyle, initialValues }) =>
                 label="Email"
                 onBlur={handleBlur('email')}
                 errorMessage={error('email')}
+                keyboardType="email-address"
               />
               <Input
                 value={values.password}
