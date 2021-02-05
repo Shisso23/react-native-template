@@ -12,13 +12,13 @@ import { FormScreenContainer } from '../../../components';
 const SignInScreen = () => {
   const dispatch = useDispatch();
 
-  const { Gutters } = useTheme();
+  const { Gutters, Layout } = useTheme();
 
   const _onSignInSuccess = () => {
     dispatch(isAuthenticatedFlowAction());
   };
   return (
-    <FormScreenContainer>
+    <FormScreenContainer contentContainerStyle={[Layout.scrollCenter]}>
       <SignInForm
         submitForm={userAuthService.signIn}
         onSuccess={_onSignInSuccess}
