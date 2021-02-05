@@ -10,7 +10,7 @@ import {
   apiSignInModel,
 } from '../../../models';
 
-const signIn = ({ formData }) => {
+const signIn = (formData) => {
   const signInUrl = authUrls.tokenUrl();
   const apiModel = apiSignInModel(formData);
   const oAuthData = authUtils.constructOAuthSignInData(apiModel);

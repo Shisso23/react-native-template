@@ -28,7 +28,7 @@ const SignInForm = ({ submitForm, onSuccess, containerStyle, initialValues }) =>
   };
 
   const _handleSubmission = (formData, actions) => {
-    submitForm({ formData })
+    submitForm(formData)
       .then(() => {
         actions.setSubmitting(false);
         onSuccess();
