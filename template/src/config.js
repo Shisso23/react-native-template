@@ -1,5 +1,6 @@
-/* eslint-disable import/no-unresolved */
-import { API_LOCATION, CLIENT_ID, CLIENT_SECRET, HOST_URL } from '@env';
+import Config from 'react-native-config';
+
+const { API_LOCATION, CLIENT_ID, CLIENT_SECRET, HOST_URL } = Config;
 
 export default {
   accessTokenKey: 'access_token',
