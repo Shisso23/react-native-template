@@ -17,11 +17,9 @@ const signIn = (formData) => {
   return networkService.post(signInUrl, oAuthData).then(authUtils.storeAccessAndRefreshTokens);
 };
 
-const signOut = () => {
+const signOut = () =>
   // any other signOut logic
-  return authUtils.removeAccessAndRefreshTokens();
-};
-
+  authUtils.removeAccessAndRefreshTokens();
 const register = ({ formData }) => {
   const registerUrl = authUrls.registerUrl();
   const apiModel = apiRegistrationUserModel(formData);
@@ -42,12 +40,11 @@ const forgotPassword = ({ formData }) => {
 };
 
 const doTokensExistInLocalStorage = () => {
-  const _trueIfBothExist = (accessToken, refreshToken) => {
-    return !_.isNull(accessToken) && !_.isNull(refreshToken);
-  };
-  return authUtils.getAccessAndRefreshTokens().then(([accessToken, refreshToken]) => {
-    return _trueIfBothExist(accessToken, refreshToken);
-  });
+  const _trueIfBothExist = (accessToken, refreshToken) =>
+    !_.isNull(accessToken) && !_.isNull(refreshToken);
+  return authUtils
+    .getAccessAndRefreshTokens()
+    .then(([accessToken, refreshToken]) => _trueIfBothExist(accessToken, refreshToken));
 };
 
 export default {

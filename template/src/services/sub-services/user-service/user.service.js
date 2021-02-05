@@ -4,9 +4,7 @@ import userUrls from './user.urls';
 
 const getUser = () => {
   const url = userUrls.userUrl();
-  const _createAndReturnUserModel = (apiResponse) => {
-    return userModel(apiResponse.data);
-  };
+  const _createAndReturnUserModel = (apiResponse) => userModel(apiResponse.data);
   return authNetworkService
     .get(url)
     .then(_createAndReturnUserModel)

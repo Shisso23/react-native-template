@@ -11,13 +11,11 @@ const storeAccessAndRefreshTokens = (apiResponse) => {
   ]);
 };
 
-const removeAccessAndRefreshTokens = () => {
-  return Promise.all([storageService.removeAccessToken(), storageService.removeRefreshToken()]);
-};
+const removeAccessAndRefreshTokens = () =>
+  Promise.all([storageService.removeAccessToken(), storageService.removeRefreshToken()]);
 
-const getAccessAndRefreshTokens = () => {
-  return Promise.all([storageService.getAccessToken(), storageService.getRefreshToken()]);
-};
+const getAccessAndRefreshTokens = () =>
+  Promise.all([storageService.getAccessToken(), storageService.getRefreshToken()]);
 
 const constructOAuthSignInData = ({ email, password }) => ({
   email,
@@ -27,14 +25,13 @@ const constructOAuthSignInData = ({ email, password }) => ({
   client_secret: appConfig.clientSecret,
 });
 
-const constructOAuthTokenRefreshData = () => {
-  return storageService.getRefreshToken().then((refreshToken) => ({
+const constructOAuthTokenRefreshData = () =>
+  storageService.getRefreshToken().then((refreshToken) => ({
     grant_type: 'refresh_token',
     client_id: appConfig.clientId,
     client_secret: appConfig.clientSecret,
     refresh_token: refreshToken,
   }));
-};
 
 export default {
   storeAccessAndRefreshTokens,

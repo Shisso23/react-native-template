@@ -6,12 +6,8 @@ import {
 } from '../../../../exceptions';
 
 const createNetworkErrorHandlerInterceptor = (axiosInstance) => {
-  const _serverResponded = (error) => {
-    return error.response;
-  };
-  const _noResponseFromServer = (error) => {
-    return error.request;
-  };
+  const _serverResponded = (error) => error.response;
+  const _noResponseFromServer = (error) => error.request;
   const _serverSideError = (statusCode) => statusCode >= 500;
   const _clientSideError = (statusCode) => statusCode >= 400;
 
