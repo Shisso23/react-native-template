@@ -1,8 +1,6 @@
-const constructAxiosCancelToken = ({ requestSource }) => {
-  return {
-    cancelToken: requestSource.token,
-  };
-};
+const constructAxiosCancelToken = ({ requestSource }) => ({
+  cancelToken: requestSource.token,
+});
 
 export default {
   constructAxiosCancelToken,

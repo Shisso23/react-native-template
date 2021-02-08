@@ -24,9 +24,7 @@ const refreshTokenLogic = () => {
     return ax.post(tokenUrl, refreshOAuthData);
   };
 
-  const _storeNewTokens = (apiResponse) => {
-    return userAuthUtils.storeAccessAndRefreshTokens(apiResponse);
-  };
+  const _storeNewTokens = (apiResponse) => userAuthUtils.storeAccessAndRefreshTokens(apiResponse);
 
   return Promise.resolve()
     .then(userAuthUtils.constructOAuthTokenRefreshData)
