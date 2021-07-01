@@ -7,9 +7,6 @@ export default ({ Colors, FontFamily }) => ({
     headerStyle: {
       backgroundColor: Colors.secondary,
       shadowRadius: 0,
-      shadowOffset: {
-        height: 0,
-      },
       shadowColor: 'transparent',
       elevation: 0,
     },
