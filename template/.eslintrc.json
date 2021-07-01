@@ -11,7 +11,7 @@
   },
   "plugins": ["react", "react-native", "prettier"],
   "extends": [
-    "airbnb",
+    "@react-native-community",
     "eslint:recommended",
     "plugin:react/recommended",
     "prettier/react",
@@ -40,6 +40,9 @@
         "ignoreClassNames": false,
         "ignoreStyleProperties": false
       }
-    ]
+    ],
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/prop-types": "off",
+    "no-console": "warn"
   }
 }
