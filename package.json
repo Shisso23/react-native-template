@@ -1,9 +1,9 @@
 {
   "name": "@codehesionza/react-native-template-codehesion",
-  "version": "3.1.2",
+  "version": "4.0.0",
   "description": "React Native template to be used as a starting point for internal Codehesion projects.",
   "files": [
-    "template",
+    "reactNativeTemplate",
     "template.config.js"
   ],
   "repository": {
@@ -13,7 +13,7 @@
   "keywords": [
     "react-native",
     "redux",
-    "template",
+    "reactNativeTemplate",
     "boilerplate"
   ],
   "author": "Matthew Dalton <matt@codehesion.co.za>",
