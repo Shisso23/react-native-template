@@ -2,7 +2,7 @@ import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { HomeScreen, ProfileScreen } from '../../screens';
+import { HomeScreen, ProfileScreen } from '../../components';
 import { AppStackList, DrawerList } from './types';
 import { useTheme } from '../../hooks';
 

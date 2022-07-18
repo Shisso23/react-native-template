@@ -1,14 +1,14 @@
 import React from 'react';
 import { Text } from 'react-native';
-import { Button, Input } from '@rneui/themed';
+import { Button } from '@rneui/themed';
 import { Formik, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
 import _ from 'lodash';
 
 import { emailSchema } from '../form-validaton-schemas';
-import { getFormError } from '../form-utils';
 import { ErrorObject } from '../types';
 import { UserProps } from '../../../models';
+import { TextField } from '../../atoms';
 
 type ProfileFormProps = {
   submitForm: Function;
@@ -49,34 +49,11 @@ export const ProfileForm: React.FC<ProfileFormProps> = ({
       validationSchema={profileSchema}
       enableReinitialize
     >
-      {({
-        handleChange,
-        handleSubmit,
-        values,
-        errors,
-        isSubmitting,
-        handleBlur,
-        touched,
-        status,
-      }) => {
-        const error = (name: string) => getFormError(name, { touched, status, errors });
+      {({ handleSubmit, values, isSubmitting }) => {
         return (
           <>
-            <Input
-              value={values.email}
-              onChangeText={handleChange('email')}
-              onBlur={handleBlur('email')}
-              label="Email"
-              errorMessage={error('email')}
-              keyboardType="email-address"
-            />
-            <Input
-              value={values.name}
-              onChangeText={handleChange('name')}
-              onBlur={handleBlur('name')}
-              label="Name"
-              errorMessage={error('name')}
-            />
+            <TextField name="email" label="Email" required keyboardType="email-address" />
+            <TextField name="name" label="Name" required />
             <Button title="Update" onPress={handleSubmit} loading={isSubmitting} />
             {__DEV__ && <Text>{JSON.stringify(values, null, 2)}</Text>}
           </>

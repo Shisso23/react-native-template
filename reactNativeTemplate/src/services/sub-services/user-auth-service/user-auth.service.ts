@@ -15,8 +15,8 @@ import {
 
 const signIn = (formData: SignInProps) => {
   const signInUrl = authUrls.tokenUrl();
-  const apiModel = apiSignInModel(formData);
-  const oAuthData = authUtils.constructOAuthSignInData(apiModel);
+  const apiDto = apiSignInModel(formData);
+  const oAuthData = authUtils.constructOAuthSignInData(apiDto);
 
   return networkService.post(signInUrl, oAuthData).then(authUtils.storeAccessAndRefreshTokens);
 };
@@ -27,9 +27,9 @@ const signOut = () => {
 
 const register = (formData: RegisterProps) => {
   const registerUrl = authUrls.registerUrl();
-  const apiModel = apiRegistrationUserModel(formData);
+  const apiDto = apiRegistrationUserModel(formData);
 
-  return networkService.post(registerUrl, apiModel).catch((err) => {
+  return networkService.post(registerUrl, apiDto).catch((err) => {
     err.errors = registrationUserModel(err.errors);
     return Promise.reject(err);
   });
@@ -37,9 +37,9 @@ const register = (formData: RegisterProps) => {
 
 const forgotPassword = (formData: ForgotPasswordProps) => {
   const forgotPasswordUrl = authUrls.forgotPasswordUrl();
-  const apiModel = apiForgotPasswordModel(formData);
+  const apiDto = apiForgotPasswordModel(formData);
 
-  return networkService.post(forgotPasswordUrl, apiModel).catch((err) => {
+  return networkService.post(forgotPasswordUrl, apiDto).catch((err) => {
     err.errors = forgotPasswordModel(err.errors);
     return Promise.reject(err);
   });

@@ -1,13 +1,13 @@
 import React from 'react';
-import { Button, Input } from '@rneui/themed';
+import { Button } from '@rneui/themed';
 import { Formik, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
 import _ from 'lodash';
 
-import { emailSchema, passwordSchema } from '../form-validaton-schemas';
-import { getFormError } from '../form-utils';
-import { ErrorObject } from '../types';
 import { SignInProps } from '../../../models';
+import { TextField } from '../../atoms';
+import { emailSchema, passwordSchema } from '../form-validaton-schemas';
+import { ErrorObject } from '../types';
 
 type SignInFormProps = {
   submitForm: Function;
@@ -57,36 +57,11 @@ export const SignInForm: React.FC<SignInFormProps> = ({
       onSubmit={_handleSubmission}
       validationSchema={signInSchema}
     >
-      {({
-        handleChange,
-        handleSubmit,
-        values,
-        errors,
-        isSubmitting,
-        handleBlur,
-        touched,
-        status,
-      }) => {
-        const error = (name: string): string | undefined =>
-          getFormError(name, { touched, status, errors });
+      {({ handleSubmit, isSubmitting }) => {
         return (
           <>
-            <Input
-              value={values.email}
-              onChangeText={handleChange('email')}
-              label="Email"
-              onBlur={handleBlur('email')}
-              errorMessage={error('email')}
-              keyboardType="email-address"
-            />
-            <Input
-              value={values.password}
-              onChangeText={handleChange('password')}
-              label="Password"
-              onBlur={handleBlur('password')}
-              secureTextEntry
-              errorMessage={error('password')}
-            />
+            <TextField name="email" label="Email" required keyboardType="email-address" />
+            <TextField name="password" label="Password" required isSecure />
             <Button title="Login" onPress={handleSubmit} loading={isSubmitting} />
           </>
         );

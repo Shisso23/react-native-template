@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { FormScreenContainer } from '../../../components';
-import { ForgotPasswordForm } from '../../../components/forms';
-import { userAuthService } from '../../../services';
-import { forgotPasswordModel } from '../../../models';
+import { FormScreenContainer } from '../../../index';
+import { ForgotPasswordForm } from '../../../molecules';
+import { userAuthService } from '../../../../services';
+import { forgotPasswordModel } from '../../../../models';
 
 export const ForgotPasswordScreen: React.FC = () => {
   return (
