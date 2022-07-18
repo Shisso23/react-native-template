@@ -1,14 +1,14 @@
 import React from 'react';
 import { Text } from 'react-native';
-import { Button, Input } from '@rneui/themed';
+import { Button } from '@rneui/themed';
 import { Formik, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
 import _ from 'lodash';
 
-import { emailSchema } from '../form-validaton-schemas';
-import { getFormError } from '../form-utils';
-import { ErrorObject } from '../types';
+import { TextField } from '../../atoms';
 import { ForgotPasswordProps } from '../../../models';
+import { emailSchema } from '../form-validaton-schemas';
+import { ErrorObject } from '../types';
 
 type ForgotPasswordFormProps = {
   submitForm: Function;
@@ -51,27 +51,10 @@ export const ForgotPasswordForm: React.FC<ForgotPasswordFormProps> = ({
       validationSchema={forgotPasswordSchema}
       enableReinitialize
     >
-      {({
-        handleChange,
-        handleSubmit,
-        values,
-        errors,
-        isSubmitting,
-        handleBlur,
-        touched,
-        status,
-      }) => {
-        const error = (name: string): string | undefined =>
-          getFormError(name, { touched, status, errors });
+      {({ handleSubmit, values, isSubmitting }) => {
         return (
           <>
-            <Input
-              value={values.email}
-              onChangeText={handleChange('email')}
-              onBlur={handleBlur('email')}
-              label="Email"
-              errorMessage={error('email')}
-            />
+            <TextField name="email" label="Email" required />
             <Button title="Submit" onPress={handleSubmit} loading={isSubmitting} />
             {__DEV__ && <Text>{JSON.stringify(values, null, 2)}</Text>}
           </>

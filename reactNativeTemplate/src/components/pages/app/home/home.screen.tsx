@@ -5,8 +5,8 @@ import { useDispatch } from 'react-redux';
 import { useFocusEffect } from '@react-navigation/native';
 import axios from 'axios';
 
-import { exitAppOnHardwarePressListener } from '../../../helpers';
-import { signOutAction } from '../../../reducers/user-auth-reducer/user-auth.actions';
+import { exitAppOnHardwarePressListener } from '../../../../helpers';
+import { signOutAction } from '../../../../reducers/user-auth-reducer/user-auth.actions';
 
 const { CancelToken } = axios;
 

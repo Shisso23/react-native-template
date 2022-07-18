@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { FormScreenContainer } from '../../../components';
-import { RegisterForm } from '../../../components/forms';
-import { userAuthService } from '../../../services';
-import { registrationUserModel } from '../../../models';
+import { FormScreenContainer } from '../../../index';
+import { RegisterForm } from '../../../molecules';
+import { userAuthService } from '../../../../services';
+import { registrationUserModel } from '../../../../models';
 
 export const RegisterScreen: React.FC = () => {
   const _onFormSuccess = () => {};

@@ -3,12 +3,12 @@ import { View } from 'react-native';
 import { useDispatch } from 'react-redux';
 import tw from 'twrnc';
 
-import { RegisterLink, ForgotPasswordLink } from '../../../components';
-import { FormScreenContainer } from '../../../components';
-import { SignInForm } from '../../../components/forms';
-import { isAuthenticatedFlowAction } from '../../../reducers/app-reducer/app.actions';
-import { userAuthService } from '../../../services';
-import { signInModel } from '../../../models';
+import { RegisterLink, ForgotPasswordLink } from '../../../atoms';
+import { SignInForm } from '../../../molecules';
+import { FormScreenContainer } from '../../../templates';
+import { isAuthenticatedFlowAction } from '../../../../reducers/app-reducer/app.actions';
+import { userAuthService } from '../../../../services';
+import { signInModel } from '../../../../models';
 
 export const SignInScreen: React.FC = () => {
   const dispatch = useDispatch();
