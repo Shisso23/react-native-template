@@ -1,3 +1,3 @@
-export * from './sign-in/sign-in.screen';
-export * from './register/register.screen';
-export * from './forgot-password/forgot-password.screen';
+export * from './login/login.page';
+export * from './register/register.page';
+export * from './forgot-password/forgot-password.page';

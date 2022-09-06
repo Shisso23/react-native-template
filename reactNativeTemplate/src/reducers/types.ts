@@ -1,5 +1,5 @@
-import { UserAuthReducer } from './user-auth-reducer/types';
-import { UserReducer } from './user-reducer/types';
+import { UserAuthReducer } from './user-auth-reducer';
+import { UserReducer } from './user-reducer';
 
 export type RootReducer = {
   userAuthReducer: UserAuthReducer;

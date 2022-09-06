@@ -65,3 +65,10 @@ The boilerplate contains:
 - [`src/services`](template/src/services): application services, e.g. API clients
 - [`src/reducers`](template/src/reducers): redux [actions, reducers and stores](https://redux.js.org/basics)
 - [`theme`](template/theme): base styles and colors for the application
+
+
+How to publish a new version
+- Get a personal access token
+- Create a .npmrc file from the example
+- Replace NPM_TOKEN with personal token
+- Run `npm publish`

@@ -1,6 +1,6 @@
 {
   "name": "@codehesionza/react-native-template-codehesion",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "React Native template to be used as a starting point for internal Codehesion projects.",
   "files": [
     "reactNativeTemplate",
@@ -24,6 +24,6 @@
   "homepage": "https://gitlab.com/codehesionza/react-native-template-codehesion#readme",
   "publishConfig": {
     "cache": "cache/.npm",
-    "@codehesionza:registry":"https://gitlab.com/api/v4/projects/14928295/packages/npm/"
+    "@codehesionza:registry": "https://gitlab.com/api/v4/projects/14928295/packages/npm/"
   }
 }

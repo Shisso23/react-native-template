@@ -1,0 +1,64 @@
+Arguments: 
+  /Users/keatonroux/.nvm/versions/node/v14.19.1/bin/node /Users/keatonroux/.yarn/bin/yarn.js publish
+
+PATH: 
+  /Users/keatonroux/.rvm/gems/ruby-3.0.0/bin:/Users/keatonroux/.rvm/gems/ruby-3.0.0@global/bin:/Users/keatonroux/.rvm/rubies/ruby-3.0.0/bin:/Users/keatonroux/.pyenv/shims:/Users/keatonroux/.pyenv/bin:/Users/keatonroux/bin:/Users/keatonroux/.yarn/bin:/Users/keatonroux/.config/yarn/global/node_modules/.bin:/Users/keatonroux/Library/Android/sdk/cmdline-tools/latest/bin:/Users/keatonroux/Library/Android/sdk/cmdline-tools/latest:/Users/keatonroux/.nvm/versions/node/v14.19.1/bin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/keatonroux/.rvm/gems/ruby-3.0.0/bin:/Users/keatonroux/.rvm/gems/ruby-3.0.0@global/bin:/Users/keatonroux/.rvm/rubies/ruby-3.0.0/bin:/Users/keatonroux/.pyenv/bin:/Users/keatonroux/bin:/Users/keatonroux/.yarn/bin:/Users/keatonroux/.config/yarn/global/node_modules/.bin:/Users/keatonroux/Library/Android/sdk/cmdline-tools/latest/bin:/Users/keatonroux/Library/Android/sdk/cmdline-tools/latest:/Users/keatonroux/.nvm/versions/node/v14.19.1/bin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/keatonroux/.cargo/bin:/Users/keatonroux/.rvm/bin:/Applications/GitKraken.app/Contents/Resources/app.asar.unpacked/resources/cli/unix:/Users/keatonroux/Documents/ReactNative/react-native-template-codehesion/node_modules/.bin:/Users/keatonroux/Library/Application Support/JetBrains/Toolbox/scripts:/Users/keatonroux/.rvm/bin:/usr/local/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.19.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/Users/keatonroux/.yarn/lib/cli.js:137150:13)
+      at Interface.emit (events.js:400:28)
+      at Interface._ttyWrite (readline.js:1001:16)
+      at ReadStream.onkeypress (readline.js:265:10)
+      at ReadStream.emit (events.js:400:28)
+      at emitKeys (internal/readline/utils.js:358:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1270:36)
+      at ReadStream.emit (events.js:400:28)
+      at addChunk (internal/streams/readable.js:293:12)
+
+npm manifest: 
+  {
+    "name": "@codehesionza/react-native-template-codehesion",
+    "version": "4.0.1",
+    "description": "React Native template to be used as a starting point for internal Codehesion projects.",
+    "files": [
+      "reactNativeTemplate",
+      "template.config.js"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://gitlab.com/codehesionza/react-native-template-codehesion.git"
+    },
+    "keywords": [
+      "react-native",
+      "redux",
+      "reactNativeTemplate",
+      "boilerplate"
+    ],
+    "author": "Matthew Dalton <matt@codehesion.co.za>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://gitlab.com/codehesionza/react-native-template-codehesion/issues"
+    },
+    "homepage": "https://gitlab.com/codehesionza/react-native-template-codehesion#readme",
+    "publishConfig": {
+      "cache": "cache/.npm",
+      "@codehesionza:registry": "https://gitlab.com/api/v4/projects/14928295/packages/npm/"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

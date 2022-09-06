@@ -1,7 +1,12 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { SignInScreen, RegisterScreen, ForgotPasswordScreen } from '../../components';
+import {
+  LoginPage,
+  RegisterPage,
+  ForgotPasswordPage,
+  TermsAndConditionsPage,
+} from '../../components';
 import { useTheme } from '../../hooks';
 import { AuthStackList } from './types';
 
@@ -14,21 +19,18 @@ export const AuthNavigator = () => {
     <AuthStack.Navigator screenOptions={Navigator.globalNavigatorScreenOptions}>
       <AuthStack.Screen
         name="SignIn"
-        component={SignInScreen}
+        component={LoginPage}
         options={{
           title: 'Sign In',
         }}
       />
       <AuthStack.Screen
         name="ForgotPassword"
-        component={ForgotPasswordScreen}
+        component={ForgotPasswordPage}
         options={{ title: 'Forgot Password' }}
       />
-      <AuthStack.Screen
-        name="Register"
-        component={RegisterScreen}
-        options={{ title: 'Register' }}
-      />
+      <AuthStack.Screen name="Register" component={RegisterPage} options={{ title: 'Register' }} />
+      <AuthStack.Screen name="TermsAndConditions" component={TermsAndConditionsPage} />
     </AuthStack.Navigator>
   );
 };

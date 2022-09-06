@@ -1,8 +1,8 @@
 import { createSlice, PayloadAction, Selector } from '@reduxjs/toolkit';
 
-import { userModel, UserProps } from '../../models';
 import { RootState } from '../store';
-import { UserReducer } from './types';
+import { userModel } from './user.model';
+import { User, UserReducer } from './types';
 
 const initialState: UserReducer = {
   user: userModel(),
@@ -12,7 +12,7 @@ export const userSlice = createSlice({
   name: 'userSlice',
   initialState,
   reducers: {
-    setUserAction: (state, action: PayloadAction<UserProps>) => {
+    setUserAction: (state, action: PayloadAction<User>) => {
       state.user = action.payload;
     },
   },
