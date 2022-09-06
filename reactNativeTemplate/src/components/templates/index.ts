@@ -1,2 +1,2 @@
-export * from './form-screen-container/form-screen.container';
-export * from './screen-container/screen.container';
+export * from './form-screen-template/form-screen.template';
+export * from './screen-template/screen.template';

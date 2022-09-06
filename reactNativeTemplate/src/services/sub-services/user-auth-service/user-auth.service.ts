@@ -1,46 +1,41 @@
 import _ from 'lodash';
+
+import {
+  LoginValueProps,
+  registerModel,
+  RegisterValueProps,
+  ForgotPasswordValueProps,
+} from '../../../components';
+import networkService from '../network-service/network.service';
 import authUrls from './user-auth.urls';
 import authUtils from './user-auth.utils';
-import networkService from '../network-service/network.service';
-import {
-  apiRegistrationUserModel,
-  registrationUserModel,
-  apiForgotPasswordModel,
-  forgotPasswordModel,
-  apiSignInModel,
-  RegisterProps,
-  SignInProps,
-  ForgotPasswordProps,
-} from '../../../models';
+import { registerDto } from './user-auth.dto';
 
-const signIn = (formData: SignInProps) => {
+const login = (formData: LoginValueProps) => {
   const signInUrl = authUrls.tokenUrl();
-  const apiDto = apiSignInModel(formData);
-  const oAuthData = authUtils.constructOAuthSignInData(apiDto);
+  const oAuthData = authUtils.constructOAuthSignInData(formData);
 
   return networkService.post(signInUrl, oAuthData).then(authUtils.storeAccessAndRefreshTokens);
 };
 
-const signOut = () => {
+const logout = () => {
   return authUtils.removeAccessAndRefreshTokens();
 };
 
-const register = (formData: RegisterProps) => {
+const register = (formData: RegisterValueProps) => {
   const registerUrl = authUrls.registerUrl();
-  const apiDto = apiRegistrationUserModel(formData);
+  const apiDto = registerDto(formData);
 
   return networkService.post(registerUrl, apiDto).catch((err) => {
-    err.errors = registrationUserModel(err.errors);
+    err.errors = registerModel(err.errors);
     return Promise.reject(err);
   });
 };
 
-const forgotPassword = (formData: ForgotPasswordProps) => {
+const forgotPassword = (formData: ForgotPasswordValueProps) => {
   const forgotPasswordUrl = authUrls.forgotPasswordUrl();
-  const apiDto = apiForgotPasswordModel(formData);
 
-  return networkService.post(forgotPasswordUrl, apiDto).catch((err) => {
-    err.errors = forgotPasswordModel(err.errors);
+  return networkService.post(forgotPasswordUrl, formData).catch((err) => {
     return Promise.reject(err);
   });
 };
@@ -55,8 +50,8 @@ const doTokensExistInLocalStorage = () => {
 };
 
 export default {
-  signIn,
-  signOut,
+  login,
+  logout,
   register,
   forgotPassword,
   doTokensExistInLocalStorage,

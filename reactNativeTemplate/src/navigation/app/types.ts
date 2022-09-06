@@ -2,6 +2,7 @@ import { StackNavigationProp } from '@react-navigation/stack';
 
 export type AppStackList = {
   'App Home': undefined;
+  TermsAndConditions: undefined;
 };
 export type AppStackProps = StackNavigationProp<AppStackList>;
 

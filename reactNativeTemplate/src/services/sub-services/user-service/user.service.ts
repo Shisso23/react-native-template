@@ -1,14 +1,13 @@
 import { AxiosResponse } from 'axios';
 
-import { userModel, UserProps } from '../../../models';
+import { User, userModel } from '../../../reducers/user-reducer';
 import authNetworkService from '../auth-network-service/auth-network.service';
 import userUrls from './user.urls';
-import { userDTO } from './user.dto';
+import { userDto } from './userDto';
 
 const getUser = () => {
   const url = userUrls.userUrl();
-  const _createAndReturnUserModel = (apiResponse: AxiosResponse): UserProps =>
-    userModel(apiResponse.data);
+  const _createAndReturnUserModel = (apiResponse: AxiosResponse) => userModel(apiResponse.data);
 
   return authNetworkService
     .get(url)
@@ -18,9 +17,9 @@ const getUser = () => {
     });
 };
 
-const updateUser = (formData: UserProps) => {
+const updateUser = (formData: User) => {
   const url = userUrls.userUrl();
-  const apiUser = userDTO(formData);
+  const apiUser = userDto(formData);
 
   return authNetworkService.patch(url, apiUser).catch((error) => {
     error.errors = userModel(error.errors);

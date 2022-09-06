@@ -1,5 +1,5 @@
 import { userAuthService } from '../../services';
-import { setIsAuthenticatedAction } from '../user-auth-reducer/user-auth.reducer';
+import { setIsAuthenticatedAction } from '../user-auth-reducer';
 
 export const initAppAction: Function = () => async (dispatch: Function) => {
   const { doTokensExistInLocalStorage } = userAuthService;

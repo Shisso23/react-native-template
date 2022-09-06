@@ -1,14 +1,11 @@
 import React from 'react';
-import { TouchableOpacity, View, ViewStyle } from 'react-native';
+import { TouchableOpacity, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Text } from '@rneui/themed';
 import tw from 'twrnc';
 
 import { AuthStackProps } from '../../../navigation/auth/types';
-
-type ForgotPasswordLinkProps = {
-  containerStyle?: ViewStyle | Array<ViewStyle>;
-};
+import { ForgotPasswordLinkProps } from './types';
 
 export const ForgotPasswordLink: React.FC<ForgotPasswordLinkProps> = ({ containerStyle }) => {
   const navigation = useNavigation<AuthStackProps>();

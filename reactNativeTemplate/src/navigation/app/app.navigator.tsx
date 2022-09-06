@@ -2,9 +2,9 @@ import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { HomeScreen, ProfileScreen } from '../../components';
-import { AppStackList, DrawerList } from './types';
+import { HomePage, ProfilePage, TermsAndConditionsPage } from '../../components';
 import { useTheme } from '../../hooks';
+import { AppStackList, DrawerList } from './types';
 
 const AppStack = createStackNavigator<AppStackList>();
 const Drawer = createDrawerNavigator<DrawerList>();
@@ -19,21 +19,26 @@ export const AppNavigator = () => {
         component={DrawerNavigator}
         options={{ headerShown: false }}
       />
+      <AppStack.Screen name="TermsAndConditions" component={TermsAndConditionsPage} />
     </AppStack.Navigator>
   );
 };
 
-const DrawerNavigator = () => (
-  <Drawer.Navigator>
-    <Drawer.Screen
-      name="Home"
-      component={HomeScreen}
-      options={{ headerShown: true, title: 'Home' }}
-    />
-    <Drawer.Screen
-      name="Profile"
-      component={ProfileScreen}
-      options={{ headerShown: true, title: 'Profile' }}
-    />
-  </Drawer.Navigator>
-);
+const DrawerNavigator = () => {
+  const { Navigator } = useTheme();
+
+  return (
+    <Drawer.Navigator screenOptions={Navigator.globalNavigatorScreenOptions}>
+      <Drawer.Screen
+        name="Home"
+        component={HomePage}
+        options={{ headerShown: true, title: 'Home' }}
+      />
+      <Drawer.Screen
+        name="Profile"
+        component={ProfilePage}
+        options={{ headerShown: true, title: 'Profile' }}
+      />
+    </Drawer.Navigator>
+  );
+};

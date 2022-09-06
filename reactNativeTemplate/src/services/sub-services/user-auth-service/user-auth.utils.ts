@@ -1,4 +1,6 @@
 import _ from 'lodash';
+
+import { LoginValueProps } from '../../../components';
 import storageService from '../storage-service/storage.service';
 import appConfig from '../../../config';
 
@@ -17,7 +19,7 @@ const removeAccessAndRefreshTokens = () =>
 const getAccessAndRefreshTokens = () =>
   Promise.all([storageService.getAccessToken(), storageService.getRefreshToken()]);
 
-const constructOAuthSignInData = ({ email, password }: { email: string; password: string }) => ({
+const constructOAuthSignInData = ({ email, password }: LoginValueProps) => ({
   email,
   password,
   grant_type: 'password',

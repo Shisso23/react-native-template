@@ -1,14 +1,11 @@
 import React from 'react';
-import { TouchableOpacity, View, ViewStyle } from 'react-native';
+import { TouchableOpacity, View } from 'react-native';
 import { Text } from '@rneui/themed';
 import { useNavigation } from '@react-navigation/native';
 import tw from 'twrnc';
 
 import { AuthStackProps } from '../../../navigation/auth/types';
-
-type RegisterLinkProps = {
-  containerStyle: ViewStyle | Array<ViewStyle>;
-};
+import { RegisterLinkProps } from './types';
 
 export const RegisterLink: React.FC<RegisterLinkProps> = ({ containerStyle }) => {
   const navigation = useNavigation<AuthStackProps>();

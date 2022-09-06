@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
 import 'react-native-gesture-handler';
 
 import NavigationContainer from './navigation/root.navigator';
-import { initAppAction } from './reducers/app-reducer/app.actions';
+import { useAppDispatch, initAppAction } from './reducers';
 
 const App: React.FC = () => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     dispatch(initAppAction());
