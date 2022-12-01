@@ -71,4 +71,5 @@ How to publish a new version
 - Get a personal access token
 - Create a .npmrc file from the example
 - Replace NPM_TOKEN with personal token
+- Bump the package version
 - Run `npm publish`
