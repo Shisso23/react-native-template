@@ -19,6 +19,7 @@ export const userSlice = createSlice({
 });
 
 export const { setUserAction } = userSlice.actions;
+
 export const userSelector: Selector<RootState, UserReducer> = (state: RootState) =>
   state.userReducer;
 
