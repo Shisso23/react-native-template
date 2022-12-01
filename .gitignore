@@ -2,5 +2,5 @@
 node_modules
 .npmrc
 cache
-
+yarn-error.log
 .DS_Store
