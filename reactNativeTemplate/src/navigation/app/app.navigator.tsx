@@ -5,9 +5,12 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { HomePage, ProfilePage, TermsAndConditionsPage } from '../../components';
 import { useTheme } from '../../hooks';
 import { AppStackList, DrawerList } from './types';
+import {AuthNavigator} from "../auth";
 
 const AppStack = createStackNavigator<AppStackList>();
 const Drawer = createDrawerNavigator<DrawerList>();
+
+
 
 export const AppNavigator = () => {
   const { Navigator } = useTheme();
