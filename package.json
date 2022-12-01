@@ -1,6 +1,6 @@
 {
   "name": "@codehesionza/react-native-template-codehesion",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "React Native template to be used as a starting point for internal Codehesion projects.",
   "files": [
     "reactNativeTemplate",
